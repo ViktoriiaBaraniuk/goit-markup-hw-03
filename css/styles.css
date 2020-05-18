@@ -54,7 +54,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 
-  
+  outline: 2px solid red;
 }
 /* этот класс-img создан для того чтобы избавиться от нижнего марджина картинка в 4px*/
 .img {
