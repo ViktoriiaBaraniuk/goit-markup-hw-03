@@ -53,8 +53,6 @@ h6 {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 /* этот класс-img создан для того чтобы избавиться от нижнего марджина картинка в 4px*/
 .img {
@@ -335,6 +333,9 @@ h6 {
 
 .button-items {
   padding: 6px 22px;
+
+  min-width: 73px;
+  border-radius: 4px;
   background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
 
