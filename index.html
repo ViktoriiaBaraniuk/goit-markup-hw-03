@@ -8,45 +8,53 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#" class="logo">Web<span class="item"> Studio</span></a>
-        <ul class="site-nav list">
-          <li><a href="#" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="#" class="link">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="container main-nav">
+        <nav class="main-nav">
+          <a href="#" class="logo up">Web<span class="word"> Studio</span></a>
+          <ul class="site-nav list">
+            <li class="item"><a href="#" class="link current">Студия</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="#" class="link">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <ul class="contacts list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link">
-            <img src="./images/envelope.svg" alt="Иконка для мейла" />
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link">
-            <img src="./images/mobile.svg" alt="Иконка телефона" />
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+        <ul class="contacts list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">
+              <img src="./images/envelope.svg" alt="Иконка для мейла" />
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <img src="./images/mobile.svg" alt="Иконка телефона" />
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero container">
         <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
         <a href="#" class="button">Заказать услугу</a>
       </section>
 
-      <section>
+      <section class="section container">
         <!-- скроем этот заголовок в CSS-->
-        <h2>Наши преимущества</h2>
-        <ul class="list">
-          <li>
+        <h2 class="title">Наши преимущества</h2>
+        <ul class="list pluses">
+          <li class="option">
             <a href="#"
               ><img src="./images/vector1.svg" alt="Иконка-спутник"
             /></a>
@@ -56,7 +64,7 @@
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="option">
             <a href="#"><img src="./images/clock.svg" alt="Иконка-часы" /></a>
             <h3 class="subtitle">Пунктуальность</h3>
             <p class="text">
@@ -64,7 +72,7 @@
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="option">
             <a href="#"
               ><img src="./images/comp.svg" alt="Иконка-диаграмма"
             /></a>
@@ -74,7 +82,7 @@
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="option">
             <a href="#"
               ><img src="./images/man.svg" alt="Иконка-космонавт"
             /></a>
@@ -86,10 +94,10 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="works section container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="projects list">
-          <li>
+          <li class="unit">
             <h3 class="subtitle">Десктопные приложения</h3>
             <a href="#"
               ><img
@@ -99,7 +107,7 @@
                 height="300"
             /></a>
           </li>
-          <li>
+          <li class="unit">
             <h3 class="subtitle">Мобильные приложения</h3>
             <a href="#"
               ><img
@@ -109,7 +117,7 @@
                 height="300"
             /></a>
           </li>
-          <li>
+          <li class="unit">
             <h3 class="subtitle">Дизайнерские решения</h3>
             <a href="#"
               ><img
@@ -121,10 +129,10 @@
           </li>
         </ul>
       </section>
-      <section class="section">
+      <section class="team section container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="list">
-          <li>
+          <li class="option">
             <img
               src="./images/john.jpg"
               alt="Фото Джона Смита"
@@ -132,7 +140,7 @@
               height="260"
             />
             <h3 class="section-subtitle">John Smith</h3>
-            <p>Product Designer</p>
+            <p class="item">Product Designer</p>
             <ul>
               <li>
                 <a href="#" aria-label="Instagram">Instagram</a>
@@ -149,7 +157,7 @@
             </ul>
           </li>
 
-          <li>
+          <li class="option">
             <img
               src="./images/marta.jpg"
               alt="Фото Марты Стюарт"
@@ -157,7 +165,7 @@
               height="260"
             />
             <h3 class="section-subtitle">Marta Stewart</h3>
-            <p>Frontend Developer</p>
+            <p class="item">Frontend Developer</p>
             <ul>
               <li>
                 <a href="#" aria-label="Instagram">Instagram</a>
@@ -173,8 +181,7 @@
               </li>
             </ul>
           </li>
-
-          <li>
+          <li class="option">
             <img
               src="./images/robert.jpg"
               alt="Фото Роберта Якиса"
@@ -182,7 +189,7 @@
               height="260"
             />
             <h3 class="section-subtitle">Robert Jakis</h3>
-            <p>Marketing</p>
+            <p class="item">Marketing</p>
             <ul>
               <li>
                 <a href="#" aria-label="Instagram">Instagram</a>
@@ -199,7 +206,7 @@
             </ul>
           </li>
 
-          <li>
+          <li class="option">
             <img
               src="./images/martin.jpg"
               alt="Фото Мартина Доу"
@@ -207,7 +214,7 @@
               height="260"
             />
             <h3 class="section-subtitle">Martin Doe</h3>
-            <p>UI Designer</p>
+            <p class="item">UI Designer</p>
             <ul>
               <li>
                 <a href="#" aria-label="Instagram">Instagram</a>
@@ -225,7 +232,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="clients section container">
         <h2 class="section-title">Постоянные клиенты</h2>
         <ul class="list">
           <li>
@@ -249,8 +256,8 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <div class="footer">
+    <footer class="footer container">
+      <div class="down">
         <a href="#" class="logo">Web<span class="text"> Studio</span></a>
         <address class="address">
           г. Киев, пр-т Леси Украинки, 26 <br />
@@ -260,8 +267,8 @@
           >
         </address>
       </div>
-      <div>
-        <b class="slogan">присоединяйтесь</b>
+      <div class="slogan">
+        <b class="word">присоединяйтесь</b>
         <ul class="list">
           <li>
             <a href="#" aria-label="Instagram">Instagram</a>
@@ -280,7 +287,9 @@
       <div>
         <button class="text button">Подписаться</button>
       </div>
-      <p class="copyright">2020 | Developed by GoIT Students</p>
+      <div class="copy">
+        <p class="copyright">2020 | Developed by GoIT Students</p>
+      </div>
     </footer>
   </body>
 </html>
